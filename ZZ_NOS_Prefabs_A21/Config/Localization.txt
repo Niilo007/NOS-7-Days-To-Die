@@ -1,0 +1,6 @@
+﻿Key,English
+
+noscntStorageMetalPartsPOI,"Metal Parts Crate"
+nos_aurumchem1,"Aurum Corp Chemical Mixery"
+nos_fe3cm_warehouse1,"Cementite Materials Blast Furnace"
+nos_nuclear_power_plant_2_b,"Helion Energy Corp Nuclear Power Plant"

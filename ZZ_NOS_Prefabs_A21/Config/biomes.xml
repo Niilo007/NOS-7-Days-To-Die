@@ -1,0 +1,181 @@
+﻿<worldgeneration>
+
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+		<subbiome prob="0.20"> <!-- Logging area -->
+			<layers>
+				<layer depth="1" blockname="terrForestGround">
+				</layer>
+				<layer depth="3" blockname="terrDirt"/>
+				<layer depth="*" blockname="terrStone">
+				</layer>
+				<layer depth="3" blockname="terrBedrock"/>
+			</layers>
+			<decorations>
+				<decoration type="prefab" name="nos_deco_poi_log_trailer" onslopes="false" prob=".01" rotatemax="3"/>
+				<decoration type="prefab" name="nos_deco_poi_looselogs" onslopes="false" prob=".03" rotatemax="3"/>
+				<decoration type="prefab" name="nos_deco_poi_looselog" onslopes="false" prob=".03" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource" prob=".0002" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource02" prob=".0002" rotatemax="3"/>
+				<decoration type="block" blockname="rock01" prob=".005"/>
+				<decoration type="block" blockname="rock02" prob=".005"/>
+				<decoration type="block" blockname="rock04" prob=".005"/>
+				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.02" rotatemax="7"/>
+				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".05"/>
+				<decoration type="block" blockname="treeShortGrass" prob=".35"/>
+				<decoration type="block" blockname="cntTrashPile05" prob=".0075" rotatemax="7"/>
+				<decoration type="block" blockname="cntTrashPile06" prob=".0075" rotatemax="7"/>
+				<decoration type="block" blockname="cntTrashPile08" prob=".0075" rotatemax="7"/>
+				<decoration type="block" blockname="cntTrashPile09" prob=".0075" rotatemax="7"/>
+				<decoration type="block" blockname="cntCoolerRandomLootHelper" prob=".0075" rotatemax="7"/>
+				<decoration type="block" blockname="cntBagsRandomLootHelper" prob=".02" rotatemax="7"/>
+				<decoration type="block" blockname="cntToolBoxRandomLootHelperRed" prob=".0075" rotatemax="7"/>
+				<decoration type="block" blockname="cntCollapsedGeneratorbank" prob=".0025" rotatemax="7"/>
+				<decoration type="block" blockname="cntBarrelGasSingle45" prob=".005" rotatemax="7"/>
+				<decoration type="block" blockname="treeStump" prob=".4" rotatemax="7"/>
+			</decorations>
+		</subbiome>
+	</append>
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest' or @name='snow']//decorations/decoration[@name='rock_form02' and @prob='.0005']">
+		<property name="prob" value=".00025"/>
+	</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest' or @name='snow']//decorations/decoration[@name='rock_form01' and @prob='.0005']">
+		<property name="prob" value=".00025"/>
+	</set>
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest' or @name='snow']//decorations">
+		<decoration type="prefab" name="nos_deco_poi_stoneform1" prob=".00006" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform2" prob=".00006" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform3" prob=".00006" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform4" prob=".00006" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform5" prob=".00006" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform6" prob=".00006" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform7" prob=".00006" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform8" prob=".00005" rotatemax="7"/>
+	</append>
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest' or @name='snow']//decorations/decoration[@name='rock_form02' and @prob='.001']">
+		<property name="prob" value=".0005"/>
+	</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest' or @name='snow']//decorations/decoration[@name='rock_form01' and @prob='.001']">
+		<property name="prob" value=".0005"/>
+	</set>
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest' or @name='snow']//decorations">
+		<decoration type="prefab" name="nos_deco_poi_stoneform1" prob=".00013" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform2" prob=".00013" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform3" prob=".00013" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform4" prob=".00013" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform5" prob=".00013" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform6" prob=".00012" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform7" prob=".00012" rotatemax="7"/>
+		<decoration type="prefab" name="nos_deco_poi_stoneform8" prob=".00011" rotatemax="7"/>
+	</append>
+	
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+		<subbiome prob="0.25"> <!-- Rocky rocks -->
+			<layers>
+				<layer depth="1" blockname="terrForestGround"/>
+				<layer depth="3" blockname="terrStone"/>
+				<layer depth="*" blockname="terrStone">
+					<resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all"/>
+					<resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/>
+				</layer>
+				<layer depth="3" blockname="terrBedrock"/>
+			</layers>
+			<decorations>
+				<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".004" rotatemax="3"/>
+				<decoration type="prefab" name="rock_form02" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="nos_deco_poi_stoneform1" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="nos_deco_poi_stoneform2" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="nos_deco_poi_stoneform3" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="nos_deco_poi_stoneform4" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="nos_deco_poi_stoneform5" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="nos_deco_poi_stoneform6" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="nos_deco_poi_stoneform7" prob=".1" rotatemax="7"/>
+				<decoration type="prefab" name="nos_deco_poi_stoneform8" prob=".1" rotatemax="7"/>
+				<decoration type="block" blockname="rockResource" prob=".0002" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource02" prob=".0002" rotatemax="3"/>
+				<decoration type="block" blockname="rock01" prob=".005"/>
+				<decoration type="block" blockname="rock02" prob=".005"/>
+				<decoration type="block" blockname="rock04" prob=".005"/>
+				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.02" rotatemax="7"/>
+				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".05"/>
+				<decoration type="block" blockname="treeShortGrass" prob=".05"/>
+			</decorations>
+		</subbiome>
+	</append>
+	
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+		<subbiome prob="0.15"> <!-- Wild Corn Field -->
+			<layers>
+				<layer depth="1" blockname="terrForestGround"/> <layer depth="3" blockname="terrDirt"/>
+				<layer depth="*" blockname="terrStone">
+					<resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all"/>
+					<resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/>
+				</layer>
+				<layer depth="3" blockname="terrBedrock"/>
+			</layers>
+			<decorations>
+				<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".00657" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource" prob=".00033" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
+				<decoration type="block" blockname="plantedCorn3Harvest" prob="0.008" rotatemax="7"/>
+				<decoration type="block" blockname="plantedCorn2Deco" prob="0.07" rotatemax="7"/>
+				<decoration type="block" blockname="plantedCornDead" prob="0.07" rotatemax="7"/>
+				<decoration type="block" blockname="rock01" prob=".01"/>
+				<decoration type="block" blockname="rock02" prob=".01"/>
+				<decoration type="block" blockname="rock04" prob=".01"/>
+				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".5"/>
+				<decoration type="block" blockname="treeShortGrass" prob=".85"/>
+			</decorations>
+		</subbiome>
+	</append>
+	
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+		<subbiome prob="0.20"> <!-- Mushroom Forest -->
+			<layers>
+				<layer depth="1" blockname="terrForestGround"/> <layer depth="3" blockname="terrDirt"/>
+				<layer depth="*" blockname="terrStone">
+					<resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all"/>
+					<resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/>
+				</layer>
+				<layer depth="3" blockname="terrBedrock"/>
+			</layers>
+			<decorations>
+				<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".00657" rotatemax="3"/>
+				<decoration type="block" blockname="treeOakLrg01" prob="0.031" rotatemax="7"/> <!-- ORG = 0.001 -->
+				<decoration type="block" blockname="treeOakMed01" prob="0.031" rotatemax="7"/> <!-- ORG = 0.001 -->
+				<decoration type="block" blockname="treeOakMed02" prob="0.031" rotatemax="7"/> <!-- ORG = 0.001 -->
+				<decoration type="block" blockname="treeOakSml01" prob="0.021" rotatemax="7"/> <!-- ORG = 0.001 -->
+				<decoration type="block" blockname="treeFirLrg01" prob="0.0305" rotatemax="7"/> <!-- ORG = 0.0005 -->
+				<decoration type="block" blockname="treeJuniper4m" prob="0.001" rotatemax="7"/> <!-- ORG = 0.001 -->
+				<decoration type="block" blockname="treeMountainPine12m" prob="0.091" rotatemax="7"/> <!-- ORG = 0.001 -->
+				<decoration type="block" blockname="treeMountainPine19m" prob="0.0815" rotatemax="7"/> <!-- ORG = 0.0015 -->
+				<decoration type="block" blockname="treeMountainPine27m" prob="0.082" rotatemax="7"/> <!-- ORG = 0.002 -->
+				<decoration type="block" blockname="treeMountainPine31m" prob="0.052" rotatemax="7"/> <!-- ORG = 0.002 -->
+				<decoration type="block" blockname="treeMountainPineDry21m" prob="0.102" rotatemax="7"/> <!-- ORG = 0.002 -->
+				<decoration type="block" blockname="treeMountainPine41m" prob="0.104" rotatemax="7"/> <!-- ORG = 0.004 -->
+				<decoration type="block" blockname="treeMountainPine48m" prob="0.0005" rotatemax="7"/>
+				<decoration type="block" blockname="rockResource" prob=".00033" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
+				<decoration type="block" blockname="rock01" prob=".001"/>
+				<decoration type="block" blockname="rock02" prob=".001"/>
+				<decoration type="block" blockname="rock04" prob=".001"/>
+				<decoration type="block" blockname="mushroom01" prob="0.08" rotatemax="7"/>
+				<decoration type="block" blockname="mushroom02" prob="0.08" rotatemax="7"/>
+				<decoration type="block" blockname="plantedSnowberry3Harvest" prob=".001" rotatemax="7"/>
+				<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.00025"/>
+				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001" rotatemax="7"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.001"/>
+				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/>
+				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7"/>
+				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.001" rotatemax="7"/>
+				<decoration type="block" blockname="plantedMushroom3Harvest" prob="0.08" rotatemax="7"/>
+				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".01"/> <!-- ORG = 0.4 -->
+				<decoration type="block" blockname="treeShortGrass" prob=".01"/> <!-- ORG = 0.8 -->
+			</decorations>
+		</subbiome>
+	</append>
+	
+</worldgeneration>

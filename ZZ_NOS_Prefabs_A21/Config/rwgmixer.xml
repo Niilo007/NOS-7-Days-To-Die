@@ -1,0 +1,37 @@
+<NOS_Prefabs>
+	
+	<append xpath="/rwgmixer">
+		<streettile name="rwg_tile_industrial_cap_nosreactorb">
+			<property name="maxtiles" value="1"/>
+			<property name="mintiles" value="0"/>
+			<property name="maxdensity" value="1000"/>
+		</streettile>
+	</append>
+	
+	<append xpath="/rwgmixer">
+		<streettile name="rwg_tile_downtown_corner_nos_tfp_1">
+			<property name="maxtiles" value="3"/>
+			<property name="mintiles" value="1"/>
+			<property name="maxdensity" value="1000"/>
+		</streettile>
+	</append>
+	
+	<append xpath="/rwgmixer">
+		<streettile name="rwg_tile_industrial_corner_nos1">
+			<property name="maxtiles" value="2"/>
+			<property name="mintiles" value="1"/>
+			<property name="maxdensity" value="1000"/>
+		</streettile>
+	</append>
+	
+	<append xpath="/rwgmixer">
+		<streettile name="rwg_tile_industrial_corner_nos2">
+			<property name="maxtiles" value="2"/>
+			<property name="mintiles" value="0"/>
+			<property name="maxdensity" value="1000"/>
+		</streettile>
+	</append>
+	
+</NOS_Prefabs>
+
+
