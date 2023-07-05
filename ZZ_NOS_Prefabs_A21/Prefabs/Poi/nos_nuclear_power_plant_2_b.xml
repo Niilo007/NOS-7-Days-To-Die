@@ -32,11 +32,11 @@
   <property name="POIMarkerPartSpawnChance" value="1,1,1,1,1,1,1,1,0.03,1,0.34,0.41,0.57,1,0.56,0.06,1,1,0.85,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0.4,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0.01,0,0,0.01,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0.4,0.2,0.4,0.4,1,1,0.4,1,1,1,1,1,1,1,1,1,1" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # " />
   <property class="Stats">
-    <property name="TotalVertices" value="17164483" />
-    <property name="TotalTriangles" value="7036657" />
+    <property name="TotalVertices" value="17164385" />
+    <property name="TotalTriangles" value="7036585" />
     <property class="BlockEntities">
-      <property name="Vertices" value="13808240" />
-      <property name="Triangles" value="4836550" />
+      <property name="Vertices" value="13808142" />
+      <property name="Triangles" value="4836478" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="3221191" />
