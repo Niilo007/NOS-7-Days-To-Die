@@ -2,7 +2,7 @@
 <xml>
     <Name value="NOS_Prefabs_A21" />
     <DisplayName value="NOS Prefabs" />
-    <Version value="1.0.1.1" /> <!-- Major.Minor.Build.Revision -->
+    <Version value="1.0.1.2" /> <!-- Major.Minor.Build.Revision -->
     <Description value="Adds Prefabs to the game." />
     <Author value="Niilo007" />
     <Website value="https://github.com/Niilo007/NOS-7-Days-To-Die" />
